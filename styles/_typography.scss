@@ -1,0 +1,45 @@
+h1, .h1 {
+	font-size: 3.052rem;
+}
+
+h2, .h2 {
+	font-size: 2.441rem;
+	
+	&.underline {
+		&:after {
+			content: "";
+			display: block;
+			border-bottom: 2px solid $primary;
+			width: 70%;
+			margin: 1em auto;
+		}
+	}
+}
+
+h3, .h3 {
+	font-size: 1.953rem;
+}
+
+h4, .h4 {
+	font-size: 1.563rem;
+}
+
+h5, 
+.h5 {
+	text-transform: uppercase;
+	color: $primary;
+	font-size: 1.25rem;
+}
+
+h6, .h6 {
+	font-size: 0.8rem;
+}
+
+h7, .h7 {
+	font-size: 0.64rem;
+}
+
+h8,
+.h8 {
+	font-size: 0.512rem;
+}

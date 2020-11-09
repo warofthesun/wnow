@@ -1,0 +1,88 @@
+/**
+* Theme Name: Women NOW
+* Description: Custom child theme for Women NOW. Based on BuddyX.
+* Author: The SplitPixel
+* Template: buddyx
+* Version: 0.0.1
+*/
+@import 'variables';
+@import 'typography';
+
+body {
+	background: $offwhite;
+}
+
+.site-header {
+	&__home {
+		justify-content: center;
+	}
+	
+	&-wrapper {
+		background: rgba(255,255,255,0.8);
+	}
+	
+	
+}
+
+.homepage {
+	&__header {
+		&-hero {
+			height: 70vh;
+			background: red;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			.logo {
+				&__hero {
+					background-color: rgba($white, 0.7);
+					padding: 2em 1em;
+					border-radius: 6px;
+				}
+			}
+		}
+	}
+}
+
+.bbp-user-page {
+	.site {
+		padding-top: 0 !important;
+	}
+}
+
+.full-width {
+	&__businesses {
+		background-color: rgba($primary, 0.3);
+		padding: 2em;
+		text-align: center; 
+	}
+}
+
+.member {
+	&__businesses {
+		display: flex;
+		list-style: none;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		flex-wrap: wrap;
+		
+		li {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			width: calc(100/5 * 1%);
+			
+			a {
+				display: flex;
+				align-content: center;
+			}
+		}
+		
+		img {
+			width: 100%;
+			max-width: 200px;
+			align-self: center;
+		}
+	}
+}
