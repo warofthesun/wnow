@@ -17,8 +17,6 @@ namespace BuddyX\Buddyx;
 </head>
 <!-- header-home -->
 <body <?php body_class(); ?>>
-<?php buddyx_site_loader(); ?>
-<?php buddyx_body_open(); ?>
 <?php if ( has_post_thumbnail() ) : ?>
 	<div class="homepage__header-hero" style="background-image:url(<?php the_post_thumbnail_url(); ?>); background-size:cover;">
 		
