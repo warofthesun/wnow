@@ -21,6 +21,7 @@ namespace BuddyX\Buddyx;
 <?php buddyx_body_open(); ?>
 <?php if ( has_post_thumbnail() ) : ?>
 	<div class="homepage__header-hero" style="background-image:url(<?php the_post_thumbnail_url(); ?>); background-size:cover;">
+		
 		<?php
 		
 		$image = get_field('main_logo', 'options');
@@ -41,7 +42,23 @@ namespace BuddyX\Buddyx;
 			<div class="logo__hero">
 				<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 			</div>
-		
+			
+			<?php if (have_rows('social_platforms', 'option')) : ?>
+				<ul class="social-platforms">
+					
+							
+				<?php while (have_rows('social_platforms', 'option')) : the_row(); ?>
+				<?php 
+				$link = get_sub_field('social_link');
+				if( $link ): 
+						$link_url = $link['url'];
+						$link_title = $link['title'];
+						$link_target = $link['target'] ? $link['target'] : '_self';
+						?>
+				<li><a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" alt="<?php echo esc_html( $link_title ); ?>"><?php the_sub_field('social_icon'); ?></a></li>
+				<?php endif; endwhile; ?>
+				</ul>
+			<?php endif; ?>
 		<?php endif; ?>
 	</div>
 <?php endif; ?>

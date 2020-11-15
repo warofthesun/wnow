@@ -12,6 +12,7 @@
 
 @import 'variables';
 @import 'typography';
+@import 'overrides';
 
 body {
 	background: $offwhite;
@@ -19,7 +20,7 @@ body {
 
 .site-header {
 	&__home {
-		justify-content: center;
+		justify-content: center !important;
 	}
 	
 	&-wrapper {
@@ -37,6 +38,7 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-direction: column;
 			
 			.logo {
 				&__hero {
@@ -44,6 +46,40 @@ body {
 					padding: 2em 1em;
 					border-radius: 6px;
 				}
+			}
+			
+			.social-platforms {
+				margin-bottom: -2em;
+			}
+		}
+	}
+}
+
+.social-platforms {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	font-size: 2.5em;
+	list-style: none;
+	
+	&__interior {
+		justify-content: flex-end;
+	}
+	
+	li {
+		margin: 0 .2em;
+		
+		a {
+			color: $accent !important;
+			
+			&:hover {
+				color: darken($accent, 10%) !important;
+			}
+			
+			i {
+				background: rgba($offwhite, 0.8);
+				padding: 1px 3px;
+				border-radius: 6px;
 			}
 		}
 	}
@@ -56,10 +92,29 @@ body {
 }
 
 .full-width {
+	margin-top: 6em;
+	
 	&__businesses {
 		background-color: rgba($primary, 0.3);
 		padding: 2em;
 		text-align: center; 
+	}
+	
+	&__instagram-feed {
+		text-align: center; 
+	}
+	
+	&__sponsors {
+		text-align: center;
+	}
+	
+	&__contact-section {
+		background-color: rgba($accent, .1);
+		padding: 4em 0;
+	}
+	
+	&__content {
+		margin-bottom: -1em;
 	}
 }
 

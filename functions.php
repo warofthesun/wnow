@@ -16,16 +16,21 @@
  *
  * @link https://codex.wordpress.org/Child_Themes
  */
-function buddyx_child_enqueue_styles() {
-    wp_enqueue_style( 'buddyx-style' , get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'buddyx-child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array( 'buddyx-style' ),
-        wp_get_theme()->get('Version')
+
+
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles');
+function my_theme_enqueue_styles() {
+    $parenthandle = 'buddyx-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
+    $theme = wp_get_theme();
+    wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', 
+        array(),  // if the parent theme code has a dependency, copy it to here
+        $theme->parent()->get('Version')
+    );
+    wp_enqueue_style( 'buddyx-child-style', get_stylesheet_uri(),
+        array( $parenthandle ),
+        $theme->get('Version') // this only works if you have Version in the style header
     );
 }
-
-add_action(  'wp_enqueue_scripts', 'buddyx_child_enqueue_styles', PHP_INT_MAX );
 
 // 1. customize ACF path
 add_filter('acf/settings/path', 'my_acf_settings_path');

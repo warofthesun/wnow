@@ -58,7 +58,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -77,7 +77,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -87,10 +87,152 @@
                         }
                     ],
                     "min": "",
+                    "max": "1"
+                },
+                "layout_5fab4c5797306": {
+                    "key": "layout_5fab4c5797306",
+                    "name": "instagram_feed",
+                    "label": "Instagram Feed",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fab4cd5ad261",
+                            "label": "Headline",
+                            "name": "headline",
+                            "type": "text",
+                            "instructions": "This field is optional. \r\n\r\nIf no text is entered the headline set in - <b>Theme Settings > Instagram Feed > Default Headline<\/b> - will be used.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fab4d3bad262",
+                            "label": "Instagram Feed Shortcode",
+                            "name": "instagram_feed",
+                            "type": "text",
+                            "instructions": "This field is optional. \r\n\r\nIf no shortcode is added the Instagram Feed specified in - <b>Theme Settings > Instagram Feed > Default Feed<\/b> - will be used.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5fb1684b46b2b": {
+                    "key": "layout_5fb1684b46b2b",
+                    "name": "sponsors",
+                    "label": "Sponsors",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fb1684b46b2c",
+                            "label": "Headline",
+                            "name": "headline",
+                            "type": "text",
+                            "instructions": "This field is optional. \r\n\r\nIf no text is entered the headline set in - <b>Theme Settings > Sponsors > Default Headline<\/b> - will be used.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fb1684b46b2d",
+                            "label": "",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Up to five (5) logos for Sponsors added to - <b>Theme Settings > Sponsors > Sponsors<\/b> - will be automatically displayed",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5fb1723dd48a1": {
+                    "key": "layout_5fb1723dd48a1",
+                    "name": "contact_section",
+                    "label": "Contact Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fb17248d48a2",
+                            "label": "Contact Message",
+                            "name": "contact_message",
+                            "type": "wysiwyg",
+                            "instructions": "This field is optional. \r\n\r\nIf no text is entered the content set in - <b>Theme Settings > Contact > Contact Message<\/b> - will be used.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "75",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fb1728bd48a3",
+                            "label": "Contact Form Shortcode",
+                            "name": "contact_form_shortcode",
+                            "type": "text",
+                            "instructions": "This field is optional. \r\n\r\nIf no shortcode is entered the shortcode set in - <b>Theme Settings > Contact > Contact Form Shortcode<\/b> - will be used.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
                     "max": ""
                 }
             },
-            "button_label": "Add Row",
+            "button_label": "Add Content Block",
             "min": "",
             "max": ""
         }
@@ -133,5 +275,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1604893298
+    "modified": 1605464766
 }

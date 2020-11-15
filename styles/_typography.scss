@@ -1,9 +1,10 @@
 h1, .h1 {
-	font-size: 3.052rem;
+	font-size: 3.052rem !important;
 }
 
 h2, .h2 {
-	font-size: 2.441rem;
+	font-size: 2.441rem !important;
+	color: $accent-dark !important;
 	
 	&.underline {
 		&:after {
@@ -17,29 +18,32 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 1.953rem;
+	font-size: 1.953rem !important;
+	color: $accent-dark !important;
 }
 
 h4, .h4 {
-	font-size: 1.563rem;
+	font-size: 1.563rem !important;
+	color: $accent-dark !important;
 }
 
 h5, 
 .h5 {
-	text-transform: uppercase;
-	color: $primary;
-	font-size: 1.25rem;
+	text-transform: uppercase !important;
+	color: $primary !important;
+	font-size: 1.25rem !important;
+	font-weight: 500 !important;
 }
 
 h6, .h6 {
-	font-size: 0.8rem;
+	font-size: 0.8rem !important;
 }
 
 h7, .h7 {
-	font-size: 0.64rem;
+	font-size: 0.64rem !important;
 }
 
 h8,
 .h8 {
-	font-size: 0.512rem;
+	font-size: 0.512rem !important;
 }
