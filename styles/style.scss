@@ -5,7 +5,7 @@
 * Author: The SplitPixel
 * Author URI: http://thesplitpixel.com
 * Template: buddyx
-* Version: 0.0.5
+* Version: 0.0.6
 * GitHub Theme URI: https://github.com/warofthesun/wnow.git
 */
 
@@ -15,7 +15,11 @@
 @import 'overrides';
 
 body {
-	background: $offwhite;
+	background: #FFFDF8;
+}
+
+#page {
+	background: #FFFDF8;
 }
 
 .site-header {
@@ -26,8 +30,6 @@ body {
 	&-wrapper {
 		background: rgba(255,255,255,0.8);
 	}
-	
-	
 }
 
 .homepage {
@@ -152,6 +154,10 @@ body {
 	background-color: lighten($primary, 30%) !important;
 	
 	h1 {
-		color: darken($accent, 20%) !important;
+		font-weight: 500 !important;
 	}
+}
+
+.users-nav {
+	background: rgba($primary, .1) !important;
 }
