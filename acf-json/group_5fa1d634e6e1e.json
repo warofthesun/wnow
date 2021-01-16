@@ -176,6 +176,104 @@
             ]
         },
         {
+            "key": "field_5fde6f79c801d",
+            "label": "Resources",
+            "name": "resources",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5fa759c67a2d5",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Business",
+            "sub_fields": [
+                {
+                    "key": "field_5fde6f79c801e",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fde6f79c801f",
+                    "label": "Business Website <I>(optional)<\/I>",
+                    "name": "business_website",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url"
+                },
+                {
+                    "key": "field_5fde6f79c8020",
+                    "label": "Business Logo",
+                    "name": "business_logo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5fde6f79c8021",
+                    "label": "Business Description <I>(optional)<\/I>",
+                    "name": "business_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "wpautop"
+                }
+            ]
+        },
+        {
             "key": "field_5fb1674b1c920",
             "label": "Sponsors",
             "name": "",
@@ -512,5 +610,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1605464579
+    "modified": 1608413068
 }

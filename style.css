@@ -142,6 +142,26 @@ body {
   padding: 2em;
   text-align: center;
 }
+.full-width__organizations .organizations {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (min-width: 780px) {
+  .full-width__organizations .organizations li {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .full-width__organizations .organizations .logo {
+    width: 30%;
+    display: inline-block;
+  }
+  .full-width__organizations .organizations .content {
+    width: 65%;
+    display: inline-block;
+  }
+}
 .full-width__instagram-feed {
   text-align: center;
 }
@@ -182,10 +202,11 @@ body {
 }
 
 .site-sub-header {
-  background-color: #e4d091 !important;
+  background-color: rgba(204, 0, 44, 0.1) !important;
 }
 .site-sub-header h1 {
   font-weight: 500 !important;
+  color: #32010B !important;
 }
 
 .users-nav {

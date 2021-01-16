@@ -23,33 +23,33 @@ if( have_rows('full_width_content') ): ?>
 <div class="full-width__content">
 <?php while ( have_rows('full_width_content') ) : the_row(); ?>
 <?php if( get_row_layout() == 'member_businesses' ): ?>
-<div class="full-width full-width__businesses">
-	<h5>
-		<?php if (get_sub_field('headline')) : the_sub_field('headline'); else : the_field('default_headline', 'option'); endif; ?>
-	</h5>
-	<?php if( have_rows('member_businesses', 'option') ) : $i = 0; ?>
-		<ul class="member__businesses">
-			<?php while( have_rows('member_businesses', 'option') ) : the_row(); ?>
-			<?php $i++;
-			
-			if( $i > 10 )
-			{
-				break;
-			}
-			?>
-			<li>
-				<?php if (get_sub_field('business_website') ) : ?>
-				<a href="<?php the_sub_field('business_website'); ?>" target="_blank">
-				<?php endif; ?>
-				<img src="<?php the_sub_field('business_logo'); ?>" alt="<?php the_sub_field('name'); ?>">
-				<?php if (get_sub_field('business_website') ) : ?>
-				</a>
-				<?php endif; ?>
-			</li>
-			<?php endwhile; ?> 
-		</ul>
-	<?php endif; ?>
-</div>
+	<div class="full-width full-width__businesses">
+		<h5>
+			<?php if (get_sub_field('headline')) : the_sub_field('headline'); else : the_field('default_headline', 'option'); endif; ?>
+		</h5>
+		<?php if( have_rows('member_businesses', 'option') ) : $i = 0; ?>
+			<ul class="member__businesses">
+				<?php while( have_rows('member_businesses', 'option') ) : the_row(); ?>
+				<?php $i++;
+				
+				if( $i > 10 )
+				{
+					break;
+				}
+				?>
+				<li>
+					<?php if (get_sub_field('business_website') ) : ?>
+					<a href="<?php the_sub_field('business_website'); ?>" target="_blank">
+					<?php endif; ?>
+					<img src="<?php the_sub_field('business_logo'); ?>" alt="<?php the_sub_field('name'); ?>">
+					<?php if (get_sub_field('business_website') ) : ?>
+					</a>
+					<?php endif; ?>
+				</li>
+				<?php endwhile; ?> 
+			</ul>
+		<?php endif; ?>
+	</div>
 	<?php elseif( get_row_layout() == 'instagram_feed' ): ?>
   <div class="full-width full-width__instagram-feed">
 		<h5>
