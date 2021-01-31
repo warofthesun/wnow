@@ -29,7 +29,11 @@ namespace BuddyX\Buddyx;
 		<?php
 	}
 
-	the_content();
+	the_content(); ?>
+	
+	<div class="events">
+		
+	<?php
 	
 	if( have_rows('events') ):
 	// Loop through rows.
@@ -42,6 +46,9 @@ namespace BuddyX\Buddyx;
 	// End loop.
 	endwhile;
 endif;			
+?>
+	</div>
+	<?php
 		
 	wp_link_pages(
 		array(
@@ -54,5 +61,4 @@ endif;
 		comments_template();
 	}
 	?>
-	entry page
 </div><!-- .entry-content -->

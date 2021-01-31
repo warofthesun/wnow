@@ -24,8 +24,10 @@ namespace BuddyX\Buddyx;
 			),
 			get_the_title()
 		)
-	);
+	); ?>
 	
+	<div class="events">
+		<?php
 	if( have_rows('events') ):
 	// Loop through rows.
 	while( have_rows('events') ) : the_row();
@@ -37,6 +39,9 @@ namespace BuddyX\Buddyx;
 	// End loop.
 	endwhile;
 endif;	
+?>
+	</div>
+	<?php
 
 	wp_link_pages(
 		[
