@@ -56,6 +56,19 @@ $default_sidebar = get_theme_mod( 'sidebar_option', buddyx_defaults( 'sidebar-op
 					
 					
 					 } ?>
+					<?php 
+					if( have_rows('events') ):
+					// Loop through rows.
+					while( have_rows('events') ) : the_row();
+							// Load sub field value.
+							
+							the_sub_field('event_code'); 
+							// Do something...
+						
+					// End loop.
+					endwhile;
+			endif;
+			?>
 			<?php 			
 
 			if ( ! is_singular() ) {
@@ -86,7 +99,6 @@ $default_sidebar = get_theme_mod( 'sidebar_option', buddyx_defaults( 'sidebar-op
 			</aside>
 		<?php endif; ?>
 	<?php } ?>
-
 	<?php do_action( 'buddyx_after_content' ); ?>
 <?php
 get_footer();

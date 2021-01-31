@@ -1,0 +1,80 @@
+{
+    "key": "group_600627c5a2d9c",
+    "title": "Events",
+    "fields": [
+        {
+            "key": "field_6006285f7973e",
+            "label": "",
+            "name": "events",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_6006290379740",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Event",
+            "sub_fields": [
+                {
+                    "key": "field_600628b07973f",
+                    "label": "Event Code",
+                    "name": "event_code",
+                    "type": "acf_code_field",
+                    "instructions": "Paste code from Eventbrite into this field",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "mode": "javascript",
+                    "theme": "monokai"
+                },
+                {
+                    "key": "field_6006290379740",
+                    "label": "Event Date",
+                    "name": "event_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "m\/d\/Y",
+                    "return_format": "Ymd",
+                    "first_day": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "1870"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1612050304
+}
