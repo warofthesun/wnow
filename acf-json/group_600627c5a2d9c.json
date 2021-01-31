@@ -22,6 +22,25 @@
             "button_label": "Add Event",
             "sub_fields": [
                 {
+                    "key": "field_6006290379740",
+                    "label": "Event Name",
+                    "name": "event_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_600628b07973f",
                     "label": "Event Code",
                     "name": "event_code",
@@ -38,23 +57,6 @@
                     "placeholder": "",
                     "mode": "javascript",
                     "theme": "monokai"
-                },
-                {
-                    "key": "field_6006290379740",
-                    "label": "Event Date",
-                    "name": "event_date",
-                    "type": "date_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "20",
-                        "class": "",
-                        "id": ""
-                    },
-                    "display_format": "m\/d\/Y",
-                    "return_format": "Ymd",
-                    "first_day": 1
                 }
             ]
         }
@@ -76,5 +78,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1612050304
+    "modified": 1612062559
 }
